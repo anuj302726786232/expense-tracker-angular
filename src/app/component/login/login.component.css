@@ -1,0 +1,14 @@
+/* styles.css */
+
+body{
+  overflow: hidden;
+}
+  
+  .left-side {
+    background-image: url('https://imgs.search.brave.com/X0iIuqgUDZBqa4U2j4pNjyyEFmoonWZQjucP0nu9g4M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9j/bG9zZXVwLXNob3Qt/ZW50cmVwcmVuZXVy/LXdvcmtpbmctZnJv/bS1ob21lLWhpcy1w/ZXJzb25hbC1maW5h/bmNlcy1zYXZpbmdz/XzE4MTYyNC0yMTkz/NC5qcGc_c2VtdD1h/aXNfaHlicmlkJnc9/NzQw');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  

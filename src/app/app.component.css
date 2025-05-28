@@ -1,0 +1,28 @@
+/* Make navbar fixed on top and provide some padding below for content */
+.navbar.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;  /* Ensures the navbar is above other content */
+    background-color:  #073b4c !important;
+  }
+  
+  /* Padding for content below the navbar to prevent overlap */
+  body {
+    padding-top: 60px; /* Adjust this value based on navbar height */
+  }
+  
+  /* Optional: If you want a custom background color */
+  .bg-primary {
+    background-color: red !important;  /* You can change this color */
+  }
+  
+  .navbar-nav .nav-link {
+    color: whitesmoke; /* Text color for the links */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ddd; /* Text color on hover */
+  }
+  

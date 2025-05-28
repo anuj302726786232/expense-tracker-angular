@@ -1,0 +1,10 @@
+/* body{
+    background-image: url("https://img.freepik.com/free-vector/winter-blue-pink-gradient-background-vector_53876-117276.jpg?t=st=1746551329~exp=1746554929~hmac=d15b617d83923b8802d09263afa367246566de45be3bbeb45431833edc400ee9&w=1380");
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+.card-body
+ {
+    border-radius: 50px;
+}

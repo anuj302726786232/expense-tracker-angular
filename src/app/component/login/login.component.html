@@ -1,0 +1,40 @@
+<p>login works!</p>
+
+<div class="row">
+  <div class="col-6 left-side">
+    <!-- Your content here -->
+  </div>
+  
+
+  <div class="col-6" style="border: 2 px solid red;">
+    <!-- login.component.html -->
+<div class="d-flex justify-content-center align-items-center vh-100">
+  <form class="form-group bg-white p-4 rounded shadow w-75" [formGroup]="logInCred" (ngSubmit)="logIn()">
+    <p class="text-center fw-bold fs-3">Log In</p>
+    <label class="form-label">Email:</label>
+    <input type="email" class="form-control" placeholder="xyz@gmail.com" formControlName="userName" required>
+    <div class="text-danger" *ngIf="logInCred.get('userName')?.invalid && logInCred.get('userName')?.touched">
+      <div *ngIf="logInCred.get('userName')?.errors?.['required']">*required field.</div>
+      <div *ngIf="logInCred.get('userName')?.errors?.['email']">
+        *Enter a valid email address
+      </div>
+      <div *ngIf="logInCred.get('userName')?.errors?.['minlength']">*password must be at least 5 and maximum 16 characters..</div>
+    </div>
+
+    <label class="form-label mt-3">Password:</label>
+    <input type="password" class="form-control" placeholder="Enter a valid password" formControlName="password" required>
+    <div class="text-danger" *ngIf="logInCred.get('password')?.invalid && logInCred.get('password')?.touched">
+       <div *ngIf="logInCred.get('password')?.errors?.['required']">*required field.</div>
+       <div *ngIf="logInCred.get('password')?.errors?.['minlength']">*password must be at least 5 and maximum 16 characters..</div>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-4 w-100" [disabled]="logInCred.invalid">Log In</button>
+    <div class="text-center mt-3">
+       <span>Don't have an account? </span>
+       <a routerLink="/signUp" class="text-decoration-none text-primary">Sign Up</a>
+    </div>
+  </form>
+</div>
+  </div>
+
+</div>
